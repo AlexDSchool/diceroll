@@ -58,7 +58,7 @@ function roll5Times() {
 function rollNTimes() {
   // Display Menu Title
   outputEl.innerHTML = "<h3>ROLL 'N' TIMES</h3>";
-  let n = parseInt(prompt("Insert the amount of times (use a number)"));
+  let n = prompt("Insert the amount of times (use a number)");
   // Random Dice Roll & Total
   for (let i = 0; i < n; i++) {
     let die1 = Math.floor(Math.random() * 6) + 1;
