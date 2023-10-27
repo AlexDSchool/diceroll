@@ -52,18 +52,15 @@ function roll5Times() {
     pEl.innerHTML = `${die1},${die2} (sum: ${total})`;
     outputEl.appendChild(pEl);
     i++;
-    console.log(total.value);
   }
-  console.log(total.value);
 }
 
 function rollNTimes() {
   // Display Menu Title
   outputEl.innerHTML = "<h3>ROLL 'N' TIMES</h3>";
-  let thing = parseInt(prompt("Insert the amount of times (use a number)"));
-  console.log(thing);
+  let n = parseInt(prompt("Insert the amount of times (use a number)"));
   // Random Dice Roll & Total
-  for (let i = 0; i < thing; i++) {
+  for (let i = 0; i < n; i++) {
     let die1 = Math.floor(Math.random() * 6) + 1;
     let die2 = Math.floor(Math.random() * 6) + 1;
     let total = die1 + die2;
@@ -72,7 +69,6 @@ function rollNTimes() {
     let pEl = document.createElement(`p`);
     pEl.innerHTML = `${die1},${die2} (sum: ${total})`;
     outputEl.appendChild(pEl);
-    console.log(total.value);
   }
 }
 
